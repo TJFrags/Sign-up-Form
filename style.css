@@ -1,4 +1,5 @@
 body{
+    font-family: 'JelleeBold';
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -6,12 +7,22 @@ body{
     display: flex;
 }
 
+.left{
+    width: 45dvw;
+    height: 100%;
+
+    
+}
+
 .image{
-    width: 50dvw;
+    width: calc(45dvw + 150px);
     height: 100%;
 
     background-size:cover;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), url(images/S15.jpg);
+    background-image: url(images/S15.jpg);
+
+    position: relative;
+    left: -150px;
 }
 
 .poster{
@@ -37,17 +48,70 @@ body{
 
 .right {
     width: 60dvw;
-
+    background-color: #ededed;
+    
 }
 
 .text{
-    padding: 20px;
-    margin-top: 50px;
+    padding: 10px 40px;
+    margin-top: 20px;
 }
 
+fieldset{
+    background-color: #fff;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ;
+}
+
+legend{
+    position: relative;
+    top: 20px;
+
+}
 .row{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+
+}
+
+label{
+    font-size: 0.7rem;
+}
+
+input:invalid{
+    outline: none;
+    border: 2px solid #a31010;
+}
+
+input:valid{
+    outline: none;
+    border: 2px solid #2ca82e;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #4d4fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ;
+}
+
+input::after{
+    border: none;
+}
+
+button{
+    padding: 15px 20px;
+    background-color: #6eccb3;
+    border-radius: 10px;
+}
+.button{
+    margin: 20px;
+
 }

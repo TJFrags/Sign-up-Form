@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/jellee-typeface" type="text/css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="image"></section>
+    <section class="left"><div class="image"></div></section>
 
    <!-- <section class="poster">
         <div class="poster-image">
@@ -17,53 +18,58 @@
     
     <section class="right">
         <div class="text">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia facilis commodi rerum accusantium dignissimos ea numquam odio, minus, natus corporis obcaecati enim ab animi consectetur minima est accusamus cumque?</h2>
+            <h2>Welcome to Driftmasters! Buckle up and get ready for adrenaline-fueled drift action. Whether you’re a seasoned pro or a newbie, our community is revved up and ready to welcome you. Sign up now and join the drift revolution!</h2>
+            <h2>You know you want to.</h2>
         </div>
         <form action="/login" method="post">
             <fieldset>
                 <legend>Lets do this!</legend>
 
                 <div class="row">
-                    <div class="name">
+                    <div class="container">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name">
                     </div>
 
-                    <div class="surname">
+                    <div class="container">
                         <label for="surname">surname</label>
                         <input type="text" name="surname" id="surname">
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="Email">
+                    <div class="container">
                         <label for="Email">Email</label>
                         <input type="email" id="Email" name="Email">
                     </div>
 
-                    <div class="phone">
+                    <div class="container">
                         <label for="surname">Phone Number</label>
                         <input type="tel" name="phone" id="phone">
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="password">
+                    <div class="container">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password">
                     </div>
 
-                    <div class="confirmPassword">
+                    <div class="container">
                         <label for="confirmPassword">Confirm Password</label>
                         <input type="password" name="confirmPassword" id="confirmPassword">
                     </div>
                 </div>
             </fieldset>
 
-            <button type="submit">Create Account</button>
+<div class="button">
+    <button type="submit">Create Account</button>
+    <p>Already have an account? <a href="">login now</a></p>
+
+</div>
+            
         </form>
 
-        <p>Already have an account? <a href="">login now</a></p>
     </section>
 </body>
 </html>
