@@ -7,17 +7,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="image">
-        
-        <div class="poster">
+    <section class="image"></section>
+
+   <!-- <section class="poster">
+        <div class="poster-image">
 
         </div>
-
+    </section> -->
     
-    </section>
+    <section class="right">
+        <div class="text">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia facilis commodi rerum accusantium dignissimos ea numquam odio, minus, natus corporis obcaecati enim ab animi consectetur minima est accusamus cumque?</h2>
+        </div>
+        <form action="/login" method="post">
+            <fieldset>
+                <legend>Lets do this!</legend>
 
-    <section class="form">
-        <form action="" method="post"></form>
+                <div class="row">
+                    <div class="name">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <div class="surname">
+                        <label for="surname">surname</label>
+                        <input type="text" name="surname" id="surname">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="Email">
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" name="Email">
+                    </div>
+
+                    <div class="phone">
+                        <label for="surname">Phone Number</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="password">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+
+                    <div class="confirmPassword">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword">
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <p>Already have an account? <a href="">login now</a></p>
     </section>
 </body>
 </html>
