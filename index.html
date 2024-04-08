@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="left"><div class="image"></div></section>
-
-   <!-- <section class="poster">
-        <div class="poster-image">
-
+    <section class="left"><div class="image">
+        <div class="poster">
         </div>
-    </section> -->
+    </section>
+
+    </section>
     
     <section class="right">
         <div class="text">
@@ -28,36 +27,36 @@
                 <div class="row">
                     <div class="container">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
+                        <input pattern="[a-zA-Z]{3,}" type="text" id="name" name="name" minlength="1" maxlength="20" required>
                     </div>
 
                     <div class="container">
                         <label for="surname">surname</label>
-                        <input type="text" name="surname" id="surname">
+                        <input pattern="[a-zA-Z]{3,}" type="text" name="surname" id="surname" minlength="1" maxlength="20" required>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="container">
                         <label for="Email">Email</label>
-                        <input type="email" id="Email" name="Email">
+                        <input pattern="[a-z0-9.]+@+[a-z0-9]+\.+[a-z]{2,}" type="email" id="Email" name="Email" minlength="1" maxlength="20" required>
                     </div>
 
                     <div class="container">
-                        <label for="surname">Phone Number</label>
-                        <input type="tel" name="phone" id="phone">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" minlength="1" maxlength="20" required>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="container">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <input pattern="[a-zA-z0-9!@#$%^&*(),.~:;"{}[]\/\\]{8,}" type="password" id="password" name="password" minlength="1" maxlength="20" required>
                     </div>
 
                     <div class="container">
                         <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword">
+                        <input pattern="[a-zA-z0-9!@#$%^&*(),.~:;"{}[]\/\\]{8,}" type="password" name="confirmPassword" id="confirmPassword" minlength="1" maxlength="20" required>
                     </div>
                 </div>
             </fieldset>
